@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trang chủ</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>        
+    </head>    
+    <body>
+        <div class="container">
+            <div class="row" style="font-size: 20px;">
+                <h1 style="text-align: center; font-size: 40px;">COVID-19</h1><br>
+                <div class="col-xs-6">
+                    <table align="center">
+                        <tr>
+                            <th style="text-align: center;">WORLD</th>
+                        </tr>
+                        <tr>                                                        
+                            <td><img src="{{url_for('static', filename='img/world.jpg')}}" alt="world" width="500" height="340"></td>                            
+                        </tr>
+                        <tr>
+                            <td><div id="g_cases"></div></td>                         
+                        </tr>
+                        <tr>
+                            <td><div id="g_deaths"></div></td>                          
+                        </tr>
+                        <tr>
+                            <td><div id="g_recovered"></div></td> 
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-xs-6">
+                    <table align="center">
+                        <tr>
+                            <th style="text-align: center;">VIETNAM</th>
+                        </tr>
+                        <tr>                                                        
+                            <td><img src="{{url_for('static', filename='img/vietnam.png')}}" alt="vietnam" width="500" height="340"></td>                            
+                        </tr>
+                        <tr>
+                            <td><div id="v_cases"></div></td>                         
+                        </tr>
+                        <tr>
+                            <td><div id="v_deaths"></div></td>                          
+                        </tr>
+                        <tr>
+                            <td><div id="v_recovered"></div></td> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
