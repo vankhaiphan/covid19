@@ -13,8 +13,7 @@ freezer = Freezer(app)
 
 @app.route("/")
 def index():  
-    return render_template("index.html")
-    # return '<h1>Chay duoc khong day</h1>'
+    return render_template("index.html")    
 
 @app.route("/info", methods=["POST"])
 def info():
