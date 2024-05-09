@@ -26,7 +26,7 @@ def info():
     return jsonify(data)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
     # if len(sys.argv) > 1 and sys.argv[1] == "build":
     #     freezer.freeze()
     # else:
